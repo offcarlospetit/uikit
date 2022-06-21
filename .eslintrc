@@ -1,0 +1,62 @@
+{
+    "extends": [
+      "airbnb",
+      "airbnb/hooks",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "plugin:prettier/recommended"
+    ],
+    "settings": {
+      "import/resolver": {
+        "typescript": {},
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    },
+    "plugins": ["@typescript-eslint", "react", "prettier", "simple-import-sort"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "project": "./tsconfig.json"
+    },
+    "rules": {
+      "import/no-unresolved": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [".ts", ".tsx"]
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": false,
+          "trailingComma": "all",
+          "arrowParens": "avoid",
+          "endOfLine": "auto"
+        }
+      ],
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": ["off"],
+      "import/extensions": ["error", "never"],
+      "react/prop-types": 0,
+      "no-shadow": "off",
+      "@typescript-eslint/no-shadow": ["error"],
+      "camelcase": "off",
+      "max-classes-per-file": "off",
+      "react/jsx-props-no-spreading": "off",
+      "simple-import-sort/exports": "error",
+      "simple-import-sort/imports": "error",
+      "react/require-default-props": "off",
+      "no-param-reassign": "off",
+      "react/jsx-uses-react": "off",
+      "react/react-in-jsx-scope": "off",
+      "lines-around-directive": "off"
+    }
+  }
+  

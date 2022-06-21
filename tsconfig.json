@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "uikit": ["./src/index"]
+      // "uikit": ["./src/index"],
+      "src/*": ["./src/*"]
     },
     "outDir": "./lib/typescript",
     "jsx": "react-native",

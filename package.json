@@ -1,6 +1,6 @@
 {
     "name": "@offcarlospetit/uikit",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "simple test for uikit library",
     "main": "lib/commonjs/index.js",
     "module": "lib/module/index.js",
@@ -154,7 +154,8 @@
         "output": "lib",
         "targets": [
             "commonjs",
-            "module", [
+            "module",
+            [
                 "typescript",
                 {
                     "project": "tsconfig.build.json"

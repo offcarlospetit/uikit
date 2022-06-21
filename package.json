@@ -1,6 +1,6 @@
 {
     "name": "@offcarlospetit/uikit",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "simple test for uikit library",
     "main": "lib/commonjs/index.js",
     "react-native": "src/index.tsx",
@@ -158,7 +158,8 @@
         "output": "lib",
         "targets": [
             "commonjs",
-            "module", [
+            "module",
+            [
                 "typescript",
                 {
                     "project": "tsconfig.build.json"

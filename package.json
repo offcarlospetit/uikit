@@ -4,7 +4,7 @@
     "description": "simple test for uikit library",
     "main": "lib/commonjs/index.js",
     "react-native": "src/index.tsx",
-    "source": "src/index.tsx",
+    "source": "lib/module/index.js",
     "module": "lib/module/index.js",
     "types": "lib/typescript/src/index.d.ts",
     "files": [
@@ -158,8 +158,7 @@
         "output": "lib",
         "targets": [
             "commonjs",
-            "module",
-            [
+            "module", [
                 "typescript",
                 {
                     "project": "tsconfig.build.json"

@@ -17,12 +17,14 @@
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noStrictGenericChecks": false,
+    "outDir": "./lib/typescript",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "declaration": false
+    "declaration": false,
+    "typeRoots": ["./node_modules/@types"]
   }
 }

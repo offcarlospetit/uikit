@@ -1,5 +1,12 @@
 
 {
   "extends": "./tsconfig",
-  "exclude": ["example"]
+  "compilerOptions": {
+    "paths": {}
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx","src/**/*.json"],
+  "exclude": [
+    "**/__tests__",
+    "**/*.test.tsx",
+  ]
 }

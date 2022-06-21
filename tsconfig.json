@@ -4,27 +4,31 @@
     "paths": {
       "uikit": ["./src/index"]
     },
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "esModuleInterop": true,
+    "outDir": "./lib/typescript",
+    "jsx": "react-native",
     // "importsNotUsedAsValues": "error",
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react-jsx",
-    "lib": ["esnext"],
+    "lib": ["esnext", "dom"],
+    "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "composite": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noImplicitUseStrict": false,
     "noStrictGenericChecks": false,
-    "outDir": "./lib/typescript",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "esnext",
-    "declaration": false,
-    "typeRoots": ["./node_modules/@types"]
-  }
+    "resolveJsonModule": true,
+    "esModuleInterop": true 
+  },
+  "include": [
+    "src/**/*.ts", "src/*.ts", "src/**/*.tsx","src/**/*.json"],
+  "references": [
+  ],
 }

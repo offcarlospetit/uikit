@@ -1,5 +1,5 @@
 import { BoxProps } from "@shopify/restyle";
-import { createBoxVariant } from "./createVariants";
+import { createBoxVariant, CreateBoxVariantType } from "./createVariants";
 import pallete from "./pallete";
 import { RBaseTheme } from "./types";
 
@@ -39,7 +39,7 @@ const baseTag: BoxProps<RBaseTheme> = {
 };
 
 // eslint-disable-next-line import/prefer-default-export
-export const tagVariants = createBoxVariant({
+export const tagVariants: Partial<CreateBoxVariantType> = createBoxVariant({
   filled: {
     ...baseTag,
   },

@@ -1,6 +1,6 @@
 {
     "name": "@offcarlospetit/uikit",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "simple test for uikit library",
     "main": "lib/commonjs/index.js",
     "module": "lib/module/index.js",
@@ -29,7 +29,8 @@
         "release": "release-it",
         "example": "yarn --cwd example",
         "pods": "cd example && pod-install --quiet",
-        "bootstrap": "yarn example && yarn && yarn pods"
+        "bootstrap": "yarn example && yarn && yarn pods",
+        "build": "rm -rf lib && tsc -b && bob build"
     },
     "keywords": [
         "react-native",
@@ -51,6 +52,7 @@
         "@commitlint/config-conventional": "^11.0.0",
         "@react-native-community/eslint-config": "^2.0.0",
         "@release-it/conventional-changelog": "^2.0.0",
+        "@shopify/restyle": "^2.1.0",
         "@testing-library/jest-native": "^4.0.5",
         "@testing-library/react-native": "^9.1.0",
         "@types/jest": "^26.0.24",
@@ -85,7 +87,8 @@
     },
     "peerDependencies": {
         "react": "*",
-        "react-native": "*"
+        "react-native": "*",
+        "@shopify/restyle": "*"
     },
     "jest": {
         "preset": "react-native",
@@ -151,13 +154,16 @@
         "output": "lib",
         "targets": [
             "commonjs",
-            "module",
-            "typescript"
+            "module", [
+                "typescript",
+                {
+                    "project": "tsconfig.build.json"
+                }
+            ]
         ]
     },
     "dependencies": {
         "@react-navigation/native": "^6.0.10",
-        "@shopify/restyle": "^2.1.0",
         "react-native-paper": "^4.12.1"
     }
 }

@@ -1,4 +1,4 @@
-import { createBoxVariant, createTextVariant } from "./createVariants";
+import { createBoxVariant, createTextVariant, CreateTextVariantType } from "./createVariants";
 import pallete from "./pallete";
 
 export const buttonVariantColors = {
@@ -112,4 +112,4 @@ export const buttonTextSize = createTextVariant({
   ml: { variant: "p1R" },
   l: { variant: "h4" },
   xl: { variant: "h3" },
-});
+} as Partial<CreateTextVariantType>);

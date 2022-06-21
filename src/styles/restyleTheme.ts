@@ -199,6 +199,5 @@ export type Colors = Partial<keyof Omit<RTheme["colors"], "defaults">>;
 
 export type TextVariant = Partial<keyof RTheme["textVariants"]>;
 
-export type RBaseTheme = typeof baseTheme;
 
 export default theme;

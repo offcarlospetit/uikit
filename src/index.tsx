@@ -1,1 +1,1 @@
-export * from './components/particles';
+export { default as TextUIkit } from './components/particles/Text';

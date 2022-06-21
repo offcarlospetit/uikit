@@ -3,10 +3,10 @@
     "version": "0.1.5",
     "description": "simple test for uikit library",
     "main": "lib/commonjs/index.js",
+    "react-native": "src/index.tsx",
+    "source": "src/index.tsx",
     "module": "lib/module/index.js",
     "types": "lib/typescript/src/index.d.ts",
-    "react-native": "src/index.tsx",
-    "source": "src/index",
     "files": [
         "src",
         "lib",
@@ -21,6 +21,10 @@
         "!android/build",
         "!ios/build"
     ],
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
     "scripts": {
         "test": "jest",
         "typescript": "tsc --noEmit",
@@ -154,8 +158,7 @@
         "output": "lib",
         "targets": [
             "commonjs",
-            "module",
-            [
+            "module", [
                 "typescript",
                 {
                     "project": "tsconfig.build.json"

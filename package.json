@@ -1,6 +1,6 @@
 {
     "name": "@offcarlospetit/uikit",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "simple test for uikit library",
     "main": "lib/commonjs/index.js",
     "module": "lib/module/index.js",
